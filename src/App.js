@@ -2,11 +2,8 @@ import React, { Component } from "react";
 import { Sudoku } from "./components/sudoku.jsx";
 import "./styles/index.scss";
 import { getSudokuStarted } from "./services/fakeService";
-import { NewGameBtn } from "./components/common/newGameBtn.jsx";
-import { Box, Cell } from "./components/common/box.jsx";
-import { Icon } from "./components/common/icon.jsx";
-import { Controller } from "./components/common/controlles";
 import { Keyboard } from "./components/common/keyboard";
+import styled from "styled-components";
 
 class App extends Component {
   state = {
@@ -20,16 +17,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
+      <Wrapper>
         <Sudoku numbers={this.state.numbers} />
         <Keyboard />
-      </div>
+      </Wrapper>
     );
   }
 }
 
-const Test = () => {
-  return <h1>Hello World</h1>;
-};
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+`;
 
 export default App;
