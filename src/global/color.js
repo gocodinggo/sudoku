@@ -1,0 +1,15 @@
+export const colors = {
+  black: "#344861",
+  hoverLight: "#F3F6FA",
+  hoverBlue: "#BBDEFB",
+  focsedBlue: "#def",
+  showingCell: "#E2E7ED",
+  similarBg: "#CBDBED",
+  blue: "#4A90E2",
+  gray: "#94A4B7",
+  red: "#FB3D3F",
+  bgRed: "#f7d0d6",
+  pencelNumber: "#6E7C8D",
+  light: "#fff",
+  font: "Source Sans Pro",
+};
